@@ -1,5 +1,9 @@
 package com.codewithsuraj.SpringBootApp.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+//@JsonIgnoreProperties({"department"})
 public class Employee {
 
     private String empId;
@@ -47,6 +51,7 @@ public class Employee {
     private String firstName;
     private String lastName;
     private String emailId;
+    //@JsonIgnore
     private String department;
 
 
